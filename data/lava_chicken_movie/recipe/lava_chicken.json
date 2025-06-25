@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:blasting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "minecraft:chicken",
+  "result": {
+    "id": "minecraft:cooked_chicken",
+    "components": {
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation": 6,
+        "can_always_eat": true
+      },
+      "minecraft:consumable": {
+        "animation": "eat",
+        "sound": "minecraft:entity.generic.eat",
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:play_sound",
+            "sound": {
+              "sound_id": "lava_chicken_movie:chicken_used_audio",
+              "range": 3
+            }
+          }
+        ]
+      },
+      "minecraft:custom_model_data": {
+        "strings": [
+          "lava_cooked"
+        ]
+      },
+      "minecraft:item_name": "\"Lava Chicken\"",
+      "minecraft:item_model": "minecraft:chicken",
+      "minecraft:potion_contents": {
+        "custom_effects": [
+          {
+            "id": "minecraft:fire_resistance",
+            "amplifier": 0,
+            "duration": 140,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:resistance",
+            "amplifier": 4,
+            "duration": 140,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:jump_boost",
+            "amplifier": 1,
+            "duration": 140,
+            "show_particles": true,
+            "show_icon": true
+          },
+          {
+            "id": "minecraft:speed",
+            "amplifier": 4,
+            "duration": 140,
+            "show_particles": true,
+            "show_icon": true
+          }
+        ]
+      }
+    }
+  }
+}

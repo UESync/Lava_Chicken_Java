@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:chicken"
+          }
+        ]
+      }
+    },
+    "has_lava_chicken": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "player": [],
+        "recipe": "lava_chicken_movie:lava_chicken"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lava_chicken",
+      "has_chicken"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lava_chicken_movie:lava_chicken"
+    ]
+  }
+}
