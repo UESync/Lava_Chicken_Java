@@ -21,7 +21,8 @@
             "type": "minecraft:play_sound",
             "sound": {
               "sound_id": "lava_chicken_movie:chicken_used_audio",
-              "range": 3
+              "source": "player",
+              "range": 1
             }
           }
         ]
@@ -31,7 +32,10 @@
           "lava_cooked"
         ]
       },
-      "minecraft:item_name": "\"Lava Chicken\"",
+      "minecraft:item_name": {
+        "text": "Lava Chicken",
+        "color": "gold"
+      },
       "minecraft:item_model": "minecraft:chicken",
       "minecraft:potion_contents": {
         "custom_effects": [
