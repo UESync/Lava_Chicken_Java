@@ -20,7 +20,7 @@
           {
             "type": "minecraft:play_sound",
             "sound": {
-              "sound_id": "lava_chicken_movie:chicken_used_audio",
+              "sound_id": "addons:entity.lava_chicken.eat",
               "source": "player",
               "range": 1
             }
