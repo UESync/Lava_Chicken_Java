@@ -21,7 +21,6 @@
             "type": "minecraft:play_sound",
             "sound": {
               "sound_id": "addons:entity.lava_chicken.eat",
-              "source": "player",
               "range": 1
             }
           }
